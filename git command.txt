@@ -78,6 +78,8 @@ git remote add origin git@github.com:SanskarJaiswal2904/FirstGitFile.git -> orig
 
 git push -u origin master ->  to upload the created .git folder in the SSH or HTTPS link name origin and in branch master (check what branch is it before writing master)
 
+git remote remove origin -> to remove remote access named origin from git directory.(This is used when you want to add another remote).
+
 if want to update a file and push it in git :->  add commit in git and run the same command "git push -u origin master" like above to make changes
 
 git push origin bugfix -> to push the branch named bugfix to github.The branch name in the github will be bugfix. But remember that your current branch shall be your bugfix
