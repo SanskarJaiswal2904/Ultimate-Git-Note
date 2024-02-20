@@ -74,6 +74,8 @@ git remote -> to show the name of the url
 
 git remote -v -> ????? (nhi malum)
 
+git remote add origin git@github.com:SanskarJaiswal2904/FirstGitFile.git -> origin is actually the name of the url so we can write origin istead of the url
+
 git push -u origin master ->  to upload the created .git folder in the SSH or HTTPS link name origin and in branch master (check what branch is it before writing master)
 
 if want to update a file and push it in git :->  add commit in git and run the same command "git push -u origin master" like above to make changes
