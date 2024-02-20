@@ -1063,3 +1063,117 @@ SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial/socialview (mai
 $
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Ultimate Git Notes
+$ pwd
+/c/Users/SansKarASUS/OneDrive/Desktop/Ultimate Git Notes
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Ultimate Git Notes
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Ultimate Git Notes
+$ git init
+Initialized empty Git repository in C:/Users/SansKarASUS/OneDrive/Desktop/Ultimate Git Notes/.git/
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Ultimate Git Notes (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Git All Code History.txt
+        Git Notes.txt
+        git command.txt
+        linux command.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Ultimate Git Notes (master)
+$ git add .
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Ultimate Git Notes (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Git All Code History.txt
+        new file:   Git Notes.txt
+        new file:   git command.txt
+        new file:   linux command.txt
+
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Ultimate Git Notes (master)
+$ git commit -m "All notes to github"
+[master (root-commit) c4d3351] All notes to github
+ 4 files changed, 1213 insertions(+)
+ create mode 100644 Git All Code History.txt
+ create mode 100644 Git Notes.txt
+ create mode 100644 git command.txt
+ create mode 100644 linux command.txt
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Ultimate Git Notes (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Ultimate Git Notes (master)
+$ git remote add origin git@github.com:SanskarJaiswal2904/Ultimate-Git-Note.git
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Ultimate Git Notes (master)
+$ git remote
+origin
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Ultimate Git Notes (master)
+$ git push -u origin master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 10.40 KiB | 760.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/SanskarJaiswal2904/Ultimate-Git-Note/pull/new/master
+remote:
+To github.com:SanskarJaiswal2904/Ultimate-Git-Note.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Ultimate Git Notes (master)
+$
+
+
+
