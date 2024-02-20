@@ -1,0 +1,43 @@
+git bash is terminal of git.
+
+we can use linux based code in git bash.
+
+ssh1 key helps confirm the ssh1 key of the project and the computer in which it is getting downloaded, if its same then its safe and secure and if it is different that means some changes have been made to the file.. if we add anything in the project in either computer or in the git hub system the ssh1 key will update even if its a very minute change
+
+we can use powershell instead of gitbash
+
+lets say we initialise a git folder and add all the files in the staging area by the command git add --a. Then if i edit a particular file name "README.MD" then do git status the README.MD file will be showing in the 
+
+----------------------------------------------------------------------------------------------------------------------------------------
+Let's say we want to create a file but we don't want that file to get committed in the git for that you create a file that is called .gitignore, And inside that .gitignore file Open it with the help of notepad and write the name of the file that you do not want to commit for example error.log and save that file next flight
+	now if you run the command git Status you will see a file name .gitignore in the modified section, Commit the .gitignore using git add --a  
+	now if you want to ignore all file that ends with .log for example error.log, time.log, etc. In the .gitignore file write *.log. this will ignore all the files that ends with .log extension
+	if you want to ignore a particular folder for example named static, inside the git ignore write "static/" this will ignore all the folder named static
+	And if you want to ignore the outer folder named static and not some folder named static which is created inside a random folder write inside the .gitignore file /static/ thill will ignore the folder that is present outside
+	And if you want to ignore a folder of a particular directory write the path of the directory static/image
+
+			For more information watch -> https://youtu.be/TwKALVoK5cE?si=ZSm0OJgCrDBNwaA3
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+git diff -> used to compare the working directory with the staging directory
+git diff --staged -> used to compare the previous commit with the current staging directory
+
+git commit -a -m "message" -> it is used to commit a file withouth staging it. it can only be used to update a file but a file that is newly created cannot be committed with this.
+
+Lets say we created a file named "Tempo.txt" and commited it to the git. Now if we put the file "Tempo.txt" in the .gitignore the git will still be tracking it now inorder for git not to track it we will use  command "git rm --cached Tempo.txt" the git will then not be tracking it
+
+alias is used to define shortcut for a big command
+
+when we merge different git branches we need to commit the final branch one more time
+
+it is not possible to delete current branch, but it is possible to delete master branch by being on some other branch. If master branch deleted "rm -rf .git" to delete git repo and do "git init" to start the .git again, but this master branch will not have any memory of the deleted master branch and will be treated as brand new branch
+
+
+GitHub:---
+.git is a library of a folder
+and github just displays this .git library beautifully in the github
+
+when we push our git to a remote repository the branches that are present in our .git folder will not be send to that git repo in github. We need to send the branches explicitly using the command "git push origin branch".But remember the current branch must be the branch you want to push to github (or any remote)
+
+it is possible to delete a branch from git bash
+

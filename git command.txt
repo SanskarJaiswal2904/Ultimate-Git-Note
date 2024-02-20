@@ -1,0 +1,85 @@
+git init	Initializes a new Git repository in the current directory.It simply creates .git folder
+git status	Shows the current state of your repository, including tracked and untracked files, modified files, and branch information.
+git add --a or git add .     Adds all modified and new files to the staging area.
+git restore --staged temp.txt           to remove from the staging area
+
+
+git log		Displays the commit history of the current branch.
+	press q to exit git log
+
+touch <file name> -> To create a file
+
+
+
+git clone <repository_url_HTTP>			this Clones a repository from a remote server to your local machine.
+git clone <repository_url_HTTP>	newName		this Clones a repository from a remote server to your local machine in a folder named newName.
+
+
+rm -rf .git	Removes a file from both the working directory and the repository, staging the deletion.So if we do git status it will show not a git repo. It simply deletes .git folder.
+
+git rm --cached Tempo.txt 	to untrack a file called Tempo.txt
+
+rm -rf .git  -> to undo the git init command or delete .git folder
+
+git log -p -> shows all the commit of git repo with details such as which line added or removed
+git log --stat --> shows all the commit of git repo (SIMPLY) with details such as which line added or removed
+git log --pretty=oneline -> all log items in one line
+git log --pretty=short -> all log items short and precise
+git log --pretty=full -> all log items in long way
+git log --since=2.days -> all log items of last 2 days
+git log --since=2.weeks -> all log items of last 2 weeks
+git log --since=2.months -> all log items of last 2 months
+git log --since=2.years -> all log items of last 2 years
+git log --pretty=format:"%h -- %an" -> all log items in format "abbreviated hash -- author name"
+
+git commit --amend -> to change the recently committed commit 
+
+git checkout -- temp.txt -> if we want to go back to the file to the last committed version we will simply write this coomand and it will changed the file to the last commit
+git checkout -f -> bring the whole file to the latest commit, thus nullyfying all changes
+
+git remote add origin git@github.com:SanskarJaiswal2904/FirstGitFile.git -> origin is actually the name of the url so we can write origin istead of the url
+
+git config --global alias.st status -> now the shortcut for "git status" is "git st",,, alias is used to define shortcut for a big command
+
+git checkout -b develop --> to create a new branch and switch to it called develop
+git checkout master --> to go to a branch called master which is already created
+git checkout develop --> to go to a branch called develop which is already created
+
+git branch --> to show all branches present, the green colored one is the current branch
+git branch -v --> to show all branches present, with last commit message and hash id
+git merge develop --> merge branch develop to the current branch(here master)
+
+git branch -d improvingLayout --> will delete a branch named improvingLayout
+
+git push origin bugfix -> to push the branch named bugfix to github.The branch name in the github will be bugfix. But remember that your current branch shall be your bugfix
+
+git push origin bugfix:newbugfix -> to push the branch named bugfix to github.The branch name in the github will be newbugfix. But remember that your current branch shall be your bugfix
+
+git push -d origin bugfix -> to delete the branch name bugfix that is present in github
+
+
+
+
+
+
+
+
+
+
+GitHub:---
+*If no SSH key Exist create an SSH Key first*
+git remote add origin <url> -> the HTTPS or SSH url in the angular brackets this is simply the name that we want to use instead of the url,(in this case the name is origin, we can give any other name)
+
+git remote -> to show the name of the url 
+
+git remote -v -> ????? (nhi malum)
+
+git push -u origin master ->  to upload the created .git folder in the SSH or HTTPS link name origin and in branch master (check what branch is it before writing master)
+
+if want to update a file and push it in git :->  add commit in git and run the same command "git push -u origin master" like above to make changes
+
+git push origin bugfix -> to push the branch named bugfix to github.The branch name in the github will be bugfix. But remember that your current branch shall be your bugfix
+
+git push origin bugfix:newbugfix -> to push the branch named bugfix to github.The branch name in the github will be newbugfix. But remember that your current branch shall be your bugfix
+
+git push -d origin bugfix -> to delete the branch name bugfix that is present in github

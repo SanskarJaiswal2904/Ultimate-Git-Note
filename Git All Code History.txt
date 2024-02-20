@@ -1,0 +1,1065 @@
+
+SansKarASUS@SansKAr-0801 MINGW64 ~
+$ git
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+SansKarASUS@SansKAr-0801 MINGW64 ~
+$ pwd
+/c/Users/SansKarASUS
+
+SansKarASUS@SansKAr-0801 MINGW64 ~
+$ cd Desktop
+bash: cd: Desktop: No such file or directory
+
+SansKarASUS@SansKAr-0801 MINGW64 ~
+$ ls
+'3D Objects'/
+ AndroidStudioProjects/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Documents/
+ Downloads/
+ Favorites/
+ IdeaProjects/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ PrintHood@
+ Recent@
+ SansKarASUS.iml
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ codeforces/
+ kamya/
+ kamya1/
+ mumu_boot.txt
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ src/
+ test_repo/
+
+SansKarASUS@SansKAr-0801 MINGW64 ~
+$ cd /c
+
+SansKarASUS@SansKAr-0801 MINGW64 /c
+$ pwd
+/c
+
+SansKarASUS@SansKAr-0801 MINGW64 /c
+$ pwd
+/c
+
+SansKarASUS@SansKAr-0801 MINGW64 /c
+$
+
+
+
+
+
+
+
+
+
+
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial
+$ pwd
+/c/Users/SansKarASUS/OneDrive/Desktop/Git Tutorial
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial
+$ git config --global user.name "Sanskar"
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial
+$ git config --global user.email "sanskarjaiswal2904@gmail.com"
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.username=SanskarJaiswal2904
+user.email=sanskarjaiswal2904@gmail.com
+user.name=Sanskar
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial
+$ git config user.name
+Sanskar
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial
+$ git config user.email
+sanskarjaiswal2904@gmail.com
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial
+$ git config user.username
+SanskarJaiswal2904
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial
+$ git init
+Initialized empty Git repository in C:/Users/SansKarASUS/OneDrive/Desktop/Git Tutorial/.git/
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Git CodeWHarry.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/SansKarASUS/OneDrive/Desktop/Git Tutorial/.git/
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Git CodeWHarry.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        First File Red.docx
+        Git CodeWHarry.txt
+        first.txt
+        firstExcel.xlsx
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial (master)
+$ git add --a
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   First File Red.docx
+        new file:   Git CodeWHarry.txt
+        new file:   first.txt
+        new file:   firstExcel.xlsx
+
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial (master)
+$ git commit -m "Initial Commit"
+[master (root-commit) c53817e] Initial Commit
+ 4 files changed, 112 insertions(+)
+ create mode 100644 First File Red.docx
+ create mode 100644 Git CodeWHarry.txt
+ create mode 100644 first.txt
+ create mode 100644 firstExcel.xlsx
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial (master)
+$ git log
+commit c53817e1da4007d564a64650dccabfbbafbe2ea4 (HEAD -> master)
+Author: Sanskar <sanskarjaiswal2904@gmail.com>
+Date:   Mon Feb 19 04:49:06 2024 +0530
+
+    Initial Commit
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   first.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   First File Red.docx
+        modified:   first.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial (master)
+$ git add first.txt
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   first.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   First File Red.docx
+
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial (master)
+$ git commit -m "second Commit of first.txt"
+[master 2a90835] second Commit of first.txt
+ 1 file changed, 2 insertions(+)
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   First File Red.docx
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial (master)
+$ git add --a
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   First File Red.docx
+
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial (master)
+$ git commit -m "third^Commit "
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   First File Red.docx
+
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial (master)
+$ git commit -m "third Commit"
+[master f544f7a] third Commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial (master)
+$ git log
+commit f544f7a57a28e9aae53d6c569b954815adbc3245 (HEAD -> master)
+Author: Sanskar <sanskarjaiswal2904@gmail.com>
+Date:   Mon Feb 19 04:56:21 2024 +0530
+
+    third Commit
+
+commit 2a90835700d1b24df25b81deeb4b79758f849e6d
+Author: Sanskar <sanskarjaiswal2904@gmail.com>
+Date:   Mon Feb 19 04:54:12 2024 +0530
+
+    second Commit of first.txt
+
+commit c53817e1da4007d564a64650dccabfbbafbe2ea4
+Author: Sanskar <sanskarjaiswal2904@gmail.com>
+Date:   Mon Feb 19 04:49:06 2024 +0530
+
+    Initial Commit
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial (master)
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial
+$ pwd
+/c/Users/SansKarASUS/OneDrive/Desktop/Git Tutorial
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial
+$ ls
+'First File Red.docx'   first.txt         socialview/
+'Git CodeWHarry.txt'    firstExcel.xlsx
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial
+$ cd socialview/
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial/socialview (main)
+$ pwd
+/c/Users/SansKarASUS/OneDrive/Desktop/Git Tutorial/socialview
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial/socialview (main)
+$ pwd
+/c/Users/SansKarASUS/OneDrive/Desktop/Git Tutorial/socialview
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial/socialview (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial/socialview (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial/socialview (main)
+$ git add --a
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial/socialview (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial/socialview (main)
+$ git commit -m "changed readme"
+[main c6ae0ce] changed readme
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial/socialview (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial/socialview (main)
+$ git log
+commit c6ae0ce279769126400ae0e84bbfa30a94b403cd (HEAD -> main)
+Author: Sanskar <sanskarjaiswal2904@gmail.com>
+Date:   Mon Feb 19 13:58:16 2024 +0530
+
+    changed readme
+
+commit b7f8820dded3fdce145d889c2b54ace2110f42c0 (origin/main, origin/HEAD)
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Sat Nov 18 05:54:30 2023 -0600
+
+    Add website module, move maven configuration from buildSrc to gradle.properties
+
+commit 8c83f1526440d4aa80bdfbf7e7316a50e03e9a12 (tag: 0.1)
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Thu Aug 17 16:00:46 2023 -0500
+
+    Enforce rulebook linter, first release to Maven Central
+
+commit bdea594315b32b1c116b756f60d5f478058b2e40
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Tue Aug 15 02:11:09 2023 -0500
+
+    Drop core & commons name convention
+
+commit dbcca48209ceca4fb3ec0e123dd7aae408757217
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Thu Jan 19 01:57:51 2023 -0600
+
+    Match buildscript with `kotlin-starters`, reinstate back `socialview-core`
+
+commit f94fe87099cc9001b337063ed236d149e437f1c4
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Tue Oct 25 04:56:53 2022 +0700
+
+    Massive non-feature updates:
+    - Google Java style
+    - Robolectric test replaces Espresso
+    - Always end code files with newline
+    - Change column width from 120 to 100
+    - Move version catalog from KTS to TOML
+    - Migrate arts to separate branch
+
+commit 2ba8638ca21bbd3341852363e3ee8e9d0fa0782a
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Tue Jun 8 04:22:52 2021 +0700
+
+    First snapshot publish to maven central
+
+commit 07078840be44da1c7cd737252206ce1a27474371
+Merge: b1494dd dcb56a8
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Thu Dec 31 15:52:01 2020 +0700
+
+    Merge pull request #89 from uzaysan/update-readme
+
+    Thanks!
+
+commit dcb56a84b0f221dbe1129a00e063bbce0fdd50b9
+Author: uzaysan <43876876+uzaysan@users.noreply.github.com>
+Date:   Wed Oct 28 21:55:21 2020 +0300
+
+    Update documentation for adding library via gradle
+
+commit b1494ddfc8e9c689147bf8fa18396c524d275ac2
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Wed Jul 22 03:08:30 2020 +0700
+
+    Update build tools 3.6.4
+
+commit f5ffa908c582fbfa0491e610692ade9795b6ee91
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Sat Apr 25 21:01:29 2020 +0700
+
+    Rearrange badges, remove license lines
+
+commit a4fb8e4eae6238967a34d61b0c5ad9f38ef6d0f0
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Thu Apr 23 03:53:42 2020 +0700
+
+    Example code cleanup
+
+commit 24dee4563ff2e21507b39e946605ffc616289feb
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Tue Apr 21 05:01:13 2020 +0700
+
+    Update dependencies
+
+commit c6d7baa19d9130ac38e94d0a700ce3d080a80775
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Fri Apr 17 07:01:25 2020 +0700
+
+    Update README
+
+commit 72982a90239c095362e7a9b67fc3ca404bbc470b
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Thu Apr 16 20:13:37 2020 +0700
+
+    Partial 1.1.0 update, maybe breaking build
+
+commit 04771dc6ef47b4a1462542a591a01f19a38f7d6b
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Tue Apr 14 05:22:40 2020 +0700
+
+    Supports custom pattern, single package for all modules
+
+commit ae4e095649111d2a338aaa33f4cb50b4577cc654
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Mon Apr 13 12:09:04 2020 +0700
+
+    Gradle 5.6.4, fixes `getHashtagColor()` and `setHashtagColor()`
+
+commit a1d7d2b73cb167a8a9d2d66745fb485a2f6a664b
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Sat Jun 22 15:19:21 2019 +0700
+
+    Gradle 5.4.1
+
+commit 9cadfeaae21ee392f0d97c8030b2f852c8098cb7
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Tue Mar 19 02:53:59 2019 +0700
+
+    Removed gradle-git-publish as part of deprecated website
+
+commit 93249b726406712cd4d5bd4e5d35a0f7bf06e006
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Mon Mar 18 04:02:26 2019 +0700
+
+    Removed website since there's no longer dokka
+
+commit 1aa7892f067fbd8c7174323169f70bf6939f408c
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Mon Mar 18 03:53:22 2019 +0700
+
+    Remove ignored files
+
+commit f7e8438a873bcfaeaac227fc189fad1b3dfc5a29
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Mon Mar 18 03:52:43 2019 +0700
+
+    Fixes mention not displaying display name and SocialArrayAdapter filtering
+
+commit d7f61eb4337293156839152627d50758ce3a7c74
+Merge: 0b56a0e c8cb3de
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Mon Mar 18 01:15:55 2019 +0700
+
+    Merge pull request #58 from mhrpatel12/hyperlink-fix
+
+    use correct method for hyperlink click listener.
+
+commit c8cb3dee444d691d58eb62ceec472ea3c6b64a8b
+Author: Mihir <mihir@thehushapp.com>
+Date:   Thu Mar 14 20:18:40 2019 +0530
+
+    use correct method for hyperlink click listener.
+
+commit 0b56a0e5869f3cd0387079b311a2681c1fcdff07
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Thu Jan 24 15:38:00 2019 +0700
+commit c6ae0ce279769126400ae0e84bbfa30a94b403cd (HEAD -> main)
+Author: Sanskar <sanskarjaiswal2904@gmail.com>
+Date:   Mon Feb 19 13:58:16 2024 +0530
+
+    changed readme
+
+commit b7f8820dded3fdce145d889c2b54ace2110f42c0 (origin/main, origin/HEAD)
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Sat Nov 18 05:54:30 2023 -0600
+
+    Add website module, move maven configuration from buildSrc to gradle.propert
+ies
+
+commit 8c83f1526440d4aa80bdfbf7e7316a50e03e9a12 (tag: 0.1)
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Thu Aug 17 16:00:46 2023 -0500
+
+    Enforce rulebook linter, first release to Maven Central
+
+commit bdea594315b32b1c116b756f60d5f478058b2e40
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Tue Aug 15 02:11:09 2023 -0500
+
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial/socialview (main)
+$ git log
+commit c6ae0ce279769126400ae0e84bbfa30a94b403cd (HEAD -> main)
+Author: Sanskar <sanskarjaiswal2904@gmail.com>
+Date:   Mon Feb 19 13:58:16 2024 +0530
+
+    changed readme
+
+commit b7f8820dded3fdce145d889c2b54ace2110f42c0 (origin/main, origin/HEAD)
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Sat Nov 18 05:54:30 2023 -0600
+
+    Add website module, move maven configuration from buildSrc to gradle.properties
+
+commit 8c83f1526440d4aa80bdfbf7e7316a50e03e9a12 (tag: 0.1)
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Thu Aug 17 16:00:46 2023 -0500
+
+    Enforce rulebook linter, first release to Maven Central
+
+commit bdea594315b32b1c116b756f60d5f478058b2e40
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Tue Aug 15 02:11:09 2023 -0500
+
+    Drop core & commons name convention
+
+commit dbcca48209ceca4fb3ec0e123dd7aae408757217
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Thu Jan 19 01:57:51 2023 -0600
+
+    Match buildscript with `kotlin-starters`, reinstate back `socialview-core`
+
+commit f94fe87099cc9001b337063ed236d149e437f1c4
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial/socialview (main)
+$ git log
+commit c6ae0ce279769126400ae0e84bbfa30a94b403cd (HEAD -> main)
+Author: Sanskar <sanskarjaiswal2904@gmail.com>
+Date:   Mon Feb 19 13:58:16 2024 +0530
+
+    changed readme
+
+commit b7f8820dded3fdce145d889c2b54ace2110f42c0 (origin/main, origin/HEAD)
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Sat Nov 18 05:54:30 2023 -0600
+
+    Add website module, move maven configuration from buildSrc to gradle.properties
+
+commit 8c83f1526440d4aa80bdfbf7e7316a50e03e9a12 (tag: 0.1)
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Thu Aug 17 16:00:46 2023 -0500
+
+    Enforce rulebook linter, first release to Maven Central
+
+commit bdea594315b32b1c116b756f60d5f478058b2e40
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Tue Aug 15 02:11:09 2023 -0500
+
+    Drop core & commons name convention
+
+commit dbcca48209ceca4fb3ec0e123dd7aae408757217
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Thu Jan 19 01:57:51 2023 -0600
+
+    Match buildscript with `kotlin-starters`, reinstate back `socialview-core`
+
+commit f94fe87099cc9001b337063ed236d149e437f1c4
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Tue Oct 25 04:56:53 2022 +0700
+
+    Massive non-feature updates:
+    - Google Java style
+    - Robolectric test replaces Espresso
+    - Always end code files with newline
+    - Change column width from 120 to 100
+    - Move version catalog from KTS to TOML
+    - Migrate arts to separate branch
+
+commit 2ba8638ca21bbd3341852363e3ee8e9d0fa0782a
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Tue Jun 8 04:22:52 2021 +0700
+
+    First snapshot publish to maven central
+
+commit 07078840be44da1c7cd737252206ce1a27474371
+Merge: b1494dd dcb56a8
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Thu Dec 31 15:52:01 2020 +0700
+
+    Merge pull request #89 from uzaysan/update-readme
+
+    Thanks!
+
+commit dcb56a84b0f221dbe1129a00e063bbce0fdd50b9
+Author: uzaysan <43876876+uzaysan@users.noreply.github.com>
+Date:   Wed Oct 28 21:55:21 2020 +0300
+
+    Update documentation for adding library via gradle
+
+commit b1494ddfc8e9c689147bf8fa18396c524d275ac2
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Wed Jul 22 03:08:30 2020 +0700
+
+    Update build tools 3.6.4
+
+commit f5ffa908c582fbfa0491e610692ade9795b6ee91
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Sat Apr 25 21:01:29 2020 +0700
+
+    Rearrange badges, remove license lines
+
+commit a4fb8e4eae6238967a34d61b0c5ad9f38ef6d0f0
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Thu Apr 23 03:53:42 2020 +0700
+
+    Example code cleanup
+
+commit 24dee4563ff2e21507b39e946605ffc616289feb
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Tue Apr 21 05:01:13 2020 +0700
+
+    Update dependencies
+
+commit c6d7baa19d9130ac38e94d0a700ce3d080a80775
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Fri Apr 17 07:01:25 2020 +0700
+
+    Update README
+
+commit 72982a90239c095362e7a9b67fc3ca404bbc470b
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Thu Apr 16 20:13:37 2020 +0700
+
+    Partial 1.1.0 update, maybe breaking build
+
+commit 04771dc6ef47b4a1462542a591a01f19a38f7d6b
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Tue Apr 14 05:22:40 2020 +0700
+
+    Supports custom pattern, single package for all modules
+
+commit ae4e095649111d2a338aaa33f4cb50b4577cc654
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Mon Apr 13 12:09:04 2020 +0700
+
+    Gradle 5.6.4, fixes `getHashtagColor()` and `setHashtagColor()`
+
+commit a1d7d2b73cb167a8a9d2d66745fb485a2f6a664b
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Sat Jun 22 15:19:21 2019 +0700
+
+    Gradle 5.4.1
+
+commit 9cadfeaae21ee392f0d97c8030b2f852c8098cb7
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Tue Mar 19 02:53:59 2019 +0700
+
+    Removed gradle-git-publish as part of deprecated website
+
+commit 93249b726406712cd4d5bd4e5d35a0f7bf06e006
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Mon Mar 18 04:02:26 2019 +0700
+
+    Removed website since there's no longer dokka
+
+commit 1aa7892f067fbd8c7174323169f70bf6939f408c
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Mon Mar 18 03:53:22 2019 +0700
+
+    Remove ignored files
+
+commit f7e8438a873bcfaeaac227fc189fad1b3dfc5a29
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Mon Mar 18 03:52:43 2019 +0700
+
+    Fixes mention not displaying display name and SocialArrayAdapter filtering
+
+commit d7f61eb4337293156839152627d50758ce3a7c74
+Merge: 0b56a0e c8cb3de
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Mon Mar 18 01:15:55 2019 +0700
+
+    Merge pull request #58 from mhrpatel12/hyperlink-fix
+
+    use correct method for hyperlink click listener.
+
+commit c8cb3dee444d691d58eb62ceec472ea3c6b64a8b
+Author: Mihir <mihir@thehushapp.com>
+Date:   Thu Mar 14 20:18:40 2019 +0530
+
+    use correct method for hyperlink click listener.
+
+commit 0b56a0e5869f3cd0387079b311a2681c1fcdff07
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Thu Jan 24 15:38:00 2019 +0700
+
+    Update README.md
+
+commit a4895cfa16434df2d13d2ae3140d0c14515bd4a4
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Sat Dec 29 14:47:02 2018 +0700
+
+    Update Gradle executables
+
+commit 594c662a2b58f7f668ec86dfd07bc6640194b93c
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Sat Dec 29 14:12:25 2018 +0700
+
+    Gradle 5.1-rc-3
+
+commit 3e1d2503998938b22a24a3bc88f8cd77721db304
+Merge: 21edf0f 284ba4a
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Tue Nov 27 21:25:19 2018 +0700
+
+    Merge pull request #50 from hendraanggrian/java-migration
+
+    Java migration
+
+commit 284ba4a4c7f5ed2e599f4df496a776014a23d0cf
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Tue Nov 27 21:24:38 2018 +0700
+
+    Passed instrumented tests
+
+commit 23d9b28250fc2a3526f225fe28931522e0886df0
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Tue Nov 27 20:39:38 2018 +0700
+
+    Clicked text loses its span, looking for a workaround
+
+commit 10acf4cef77f4c0de5ae4916c5aa447cddb20466
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Tue Nov 27 19:36:48 2018 +0700
+
+    Completed core and commons Java conversion
+
+commit 44a0e737abb5ae71224e7d826c373f4f938336d1
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Mon Nov 26 12:02:57 2018 +0700
+
+    First attempt of Java migration
+
+commit 21edf0f15ca3d4e7340ff9ed07f2d28e7b3518b7
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Mon Nov 26 05:17:51 2018 +0700
+
+    SocialArrayAdapter, will also support SocialCursorAdapter
+
+commit 0b8710967684ed7e27450abc0d5385576942012e
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Mon Nov 26 05:13:44 2018 +0700
+
+    Website module
+
+commit 416e5b786398dbcd3ab4e96f4efc7502514cdca5
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Sat Nov 24 11:41:54 2018 +0700
+
+    Update README.md
+
+commit f7e11efe16dbc245fa5a59354d72568c11844883
+Merge: ed13ec5 45b1465
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Tue Sep 25 19:21:18 2018 +0700
+
+    Merge pull request #48 from stasbar/master
+
+    allow override convertToString
+
+commit 45b14655d0f37857cab93be8d6cffcbc25253c48
+Author: stasbar <stasbar1995@gmail.com>
+Date:   Tue Sep 25 13:20:12 2018 +0200
+
+    allow override convertToString
+
+commit ed13ec5ca439ab17347d87ae21dd58c45a06e28f
+Merge: 24a06f5 e5f71e1
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Thu Aug 23 17:03:17 2018 +0700
+
+    Merge pull request #47 from stasbar/master
+
+    fix formating bug
+
+commit e5f71e1e4f184c731816a03555bb0660ca7491dc
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Thu Aug 23 17:02:53 2018 +0700
+
+    Update HashtagArrayAdapter.kt
+
+    Merge `hashtag.count` null checks
+
+commit f751900f0c7c9de99c89238f3b220ec7aff70bbb
+Author: stasbar <stasbar1995@gmail.com>
+Date:   Tue Aug 21 22:38:28 2018 +0200
+
+    fix formating bug
+
+commit 24a06f57665ed310c1c898f006b65db7520806a9
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Tue Aug 21 22:30:59 2018 +0700
+
+    Update README.md
+
+commit 4be42fca6bce769e4bbee41d0eb6d2aae6906cbe
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Wed Aug 1 04:55:52 2018 +0700
+
+    Characters tokenizer with a fix for dropdown still showing without active char
+
+commit 78264cf66bf9a3ada0c47963d502267b7f3171fe
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Mon Jul 30 20:26:27 2018 +0700
+
+    Commons package in appcompat repo
+
+commit 7ad44fe128675b8b84dad6dc22824983b0d91daa
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Fri Jul 27 12:58:01 2018 +0700
+
+    Need new tokenizer that ensure suggestions wouldn't be displayed when text is null or blank
+
+commit ab96bd56db4b89cb48278472c440c8d3cd1166b7
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Tue Jul 24 10:20:56 2018 +0700
+
+    Update README.md
+
+commit d1b93e28e2c79be5ea7d6e95a44a68b8dfb0fc70
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Mon Jul 23 10:52:19 2018 +0700
+
+    App rename
+
+commit 5064d0f76cab5199aa8757d266dff96ae169c4d0
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Mon Jul 23 03:30:39 2018 +0700
+
+    Suggestions module
+
+commit 8699fd8a60cdbb499d92692b5a6403d05e18f294
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Sat Jul 21 11:52:39 2018 +0700
+
+    Allow 0 threshold and update test sources
+
+commit e2d3e50234d025f1ffa2c74e55773677a9ae81e8
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Sat Jul 21 04:05:24 2018 +0700
+
+    Preview of AndroidX support
+
+commit 52a52d393d0677e89fd6ad57ae1372e004e3b08e
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Thu Jun 28 10:29:41 2018 +0700
+
+    Approved jcenter
+
+commit 9e0203cfac064670461f7c331c212baa081e43e1
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Thu Jun 28 08:36:07 2018 +0700
+
+    Update .travis.yml
+
+commit f6e807ca8c808fc5d923246f52e481081fc81026
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Thu Jun 28 06:41:51 2018 +0700
+
+    New repository name
+
+commit 09c520f723245f70b42a0ea356fcaec671682e41
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Mon Jun 25 07:26:41 2018 +0700
+
+    Should fix Travis build #2
+
+commit c0aeddf4c77f3325e8d7d3ace573105f6b1b3efe
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Mon Jun 25 06:50:05 2018 +0700
+
+    Should fix Travis build
+
+commit 505a98af9e53e5fcc5f171fa6889bad07ae9a970
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Mon Jun 25 00:32:23 2018 +0700
+
+    0.19 awaiting pikasso jcenter approval
+
+commit 7e97047ca8cbced3fb7401f2a865cff0dd265585
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Thu Jun 21 00:43:12 2018 +0700
+
+    no custom lint
+
+commit 54b3a50c9b40ccb7b66f17468598fa3ab91e2267
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Sat Jun 9 21:46:08 2018 +0700
+
+    Explicitly importing runner and ruler
+
+commit 10174ce174cc3f654e933a1deea11ddd073a214c
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Sat Jun 9 17:20:44 2018 +0700
+
+    Travis CI integration
+
+commit 0426b2104ab84d538f12816b696acf5217dd1431
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Sat May 26 17:18:57 2018 +0700
+
+    Preparing for 27.1.1
+
+commit 6062431f0f40203dbc178981f2a8341eb9e303ef
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Thu Apr 5 04:30:33 2018 +0700
+
+    Fixes tokenizer bug, awaiting other features before releasing update
+
+commit 6262cd9f016ce4c98cd200b8958654e75a0e2f1d
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Thu Apr 5 03:48:26 2018 +0700
+
+    Found a bug: tokenizer not updating
+
+commit b253d71736070d7b280bb58ea440f9a5c1a7b172
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Wed Apr 4 05:10:08 2018 +0700
+
+    Update README
+
+commit ed3c5639a3e8b390a719f8ec7dfae1987ad3c596
+Author: Hendra Anggrian <hendraanggrian@gmail.com>
+Date:   Wed Apr 4 05:08:36 2018 +0700
+
+SansKarASUS@SansKAr-0801 MINGW64 ~/OneDrive/Desktop/Git Tutorial/socialview (main)
+$
+
+
